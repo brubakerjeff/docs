@@ -29,7 +29,12 @@ In order to use `conda-forge`, you will need to
   conda create -n gz-env
   conda activate gz-env
   ```
-4. Install desired Gazebo packages you want to install based on your application. Packages with the prefix `libgz-`
+4. Install desired Gazebo packages you want to install based on your application.
+    ```bash
+  conda install gazebo --channel conda-forge
+  ```
+  
+5. Packages with the prefix `libgz-`
    contain only the C++ libraries while the Python bindings are available separately as `gz-<package_name><#>-python`.
    To install both with a single command use `gz-<package_name><#>`.
    Thus you can use `gz-sim<#>` to fully install the latest version of Gazebo.
